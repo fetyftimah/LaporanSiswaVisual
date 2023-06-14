@@ -2,12 +2,14 @@ program Laporan_siswa;
 
 uses
   Forms,
-  MenuUtama in '..\MenuUtama.pas' {Form1};
+  Siswa in 'Siswa.pas' {FormSiswa},
+  Menu in 'Menu.pas' {MenuUtama};
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TMenuUtama, MenuUtama);
+  Application.CreateForm(TFormSiswa, FormSiswa);
   Application.Run;
 end.
