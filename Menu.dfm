@@ -23,6 +23,10 @@ object MenuUtama: TMenuUtama
         Caption = 'SISWA'
         OnClick = SISWA1Click
       end
+      object ORANGTUA1: TMenuItem
+        Caption = 'ORANG TUA'
+        OnClick = ORANGTUA1Click
+      end
     end
   end
 end

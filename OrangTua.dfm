@@ -1,9 +1,9 @@
-object FormSiswa: TFormSiswa
-  Left = 104
-  Top = 175
-  Width = 735
-  Height = 542
-  Caption = 'FORM SISWA'
+object FormOrangTua: TFormOrangTua
+  Left = 249
+  Top = 261
+  Width = 839
+  Height = 541
+  Caption = 'FORM ORANG TUA'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -26,48 +26,9 @@ object FormSiswa: TFormSiswa
     Font.Style = []
     ParentFont = False
   end
-  object lblnis: TLabel
-    Left = 24
-    Top = 48
-    Width = 33
-    Height = 19
-    Caption = 'NIS :'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Times New Roman'
-    Font.Style = []
-    ParentFont = False
-  end
-  object lblnisn: TLabel
-    Left = 24
-    Top = 80
-    Width = 45
-    Height = 19
-    Caption = 'NISN :'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Times New Roman'
-    Font.Style = []
-    ParentFont = False
-  end
-  object lblnama: TLabel
-    Left = 24
-    Top = 112
-    Width = 54
-    Height = 19
-    Caption = 'NAMA :'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Times New Roman'
-    Font.Style = []
-    ParentFont = False
-  end
   object lblnik: TLabel
     Left = 24
-    Top = 144
+    Top = 48
     Width = 36
     Height = 19
     Caption = 'NIK :'
@@ -78,51 +39,38 @@ object FormSiswa: TFormSiswa
     Font.Style = []
     ParentFont = False
   end
-  object lbltempatlahir: TLabel
+  object lblnama: TLabel
     Left = 24
-    Top = 176
-    Width = 115
-    Height = 19
-    Caption = 'TEMPAT LAHIR :'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Times New Roman'
-    Font.Style = []
-    ParentFont = False
-  end
-  object lbltanggallahir: TLabel
-    Left = 336
-    Top = 16
-    Width = 129
-    Height = 19
-    Caption = 'TANGGAL LAHIR :'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Times New Roman'
-    Font.Style = []
-    ParentFont = False
-  end
-  object lbljk: TLabel
-    Left = 336
-    Top = 48
-    Width = 124
-    Height = 19
-    Caption = 'JENIS KELAMIN :'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Times New Roman'
-    Font.Style = []
-    ParentFont = False
-  end
-  object lblalamat: TLabel
-    Left = 336
     Top = 80
-    Width = 70
+    Width = 54
     Height = 19
-    Caption = 'ALAMAT :'
+    Caption = 'NAMA :'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lblpendidikan: TLabel
+    Left = 24
+    Top = 112
+    Width = 104
+    Height = 19
+    Caption = 'PENDIDIKAN :'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lblpekerjaan: TLabel
+    Left = 24
+    Top = 144
+    Width = 96
+    Height = 19
+    Caption = 'PEKERJAAN :'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -131,8 +79,8 @@ object FormSiswa: TFormSiswa
     ParentFont = False
   end
   object lbltelp: TLabel
-    Left = 336
-    Top = 112
+    Left = 344
+    Top = 16
     Width = 42
     Height = 19
     Caption = 'TELP :'
@@ -143,12 +91,12 @@ object FormSiswa: TFormSiswa
     Font.Style = []
     ParentFont = False
   end
-  object lblhp: TLabel
-    Left = 336
-    Top = 144
-    Width = 26
+  object lblalamat: TLabel
+    Left = 344
+    Top = 48
+    Width = 70
     Height = 19
-    Caption = 'HP :'
+    Caption = 'ALAMAT :'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -156,12 +104,38 @@ object FormSiswa: TFormSiswa
     Font.Style = []
     ParentFont = False
   end
-  object lblstatus: TLabel
-    Left = 336
-    Top = 176
-    Width = 62
+  object lbljk: TLabel
+    Left = 344
+    Top = 80
+    Width = 124
     Height = 19
-    Caption = 'STATUS :'
+    Caption = 'JENIS KELAMIN :'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lblagama: TLabel
+    Left = 344
+    Top = 112
+    Width = 64
+    Height = 19
+    Caption = 'AGAMA :'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lblisactive: TLabel
+    Left = 344
+    Top = 144
+    Width = 80
+    Height = 19
+    Caption = 'IS ACTIVE :'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -170,136 +144,122 @@ object FormSiswa: TFormSiswa
     ParentFont = False
   end
   object Edtid: TEdit
-    Left = 160
+    Left = 136
     Top = 16
-    Width = 153
+    Width = 177
     Height = 21
     TabOrder = 0
   end
-  object Edtnis: TEdit
-    Left = 160
+  object Edtnik: TEdit
+    Left = 136
     Top = 48
-    Width = 153
+    Width = 177
     Height = 21
     TabOrder = 1
   end
-  object Edtnisn: TEdit
-    Left = 160
+  object Edtnama: TEdit
+    Left = 136
     Top = 80
-    Width = 153
+    Width = 177
     Height = 21
     TabOrder = 2
   end
-  object Edtnama: TEdit
-    Left = 160
+  object Edtpendidikan: TEdit
+    Left = 136
     Top = 112
-    Width = 153
+    Width = 177
     Height = 21
     TabOrder = 3
   end
-  object Edtnik: TEdit
-    Left = 160
+  object Edtpekerjaan: TEdit
+    Left = 136
     Top = 144
-    Width = 153
+    Width = 177
     Height = 21
     TabOrder = 4
   end
-  object Edttempatlahir: TEdit
-    Left = 160
-    Top = 176
-    Width = 153
+  object Edttelp: TEdit
+    Left = 480
+    Top = 16
+    Width = 177
     Height = 21
     TabOrder = 5
   end
-  object Edttanggallahir: TEdit
-    Left = 488
-    Top = 16
-    Width = 153
+  object Edtalamat: TEdit
+    Left = 480
+    Top = 48
+    Width = 177
     Height = 21
     TabOrder = 6
   end
   object Edtjk: TEdit
-    Left = 488
-    Top = 48
-    Width = 153
+    Left = 480
+    Top = 80
+    Width = 177
     Height = 21
     TabOrder = 7
   end
-  object Edtalamat: TEdit
-    Left = 488
-    Top = 80
-    Width = 153
+  object Edtagama: TEdit
+    Left = 480
+    Top = 112
+    Width = 177
     Height = 21
     TabOrder = 8
   end
-  object Edttelp: TEdit
-    Left = 488
-    Top = 112
-    Width = 153
+  object Edtisactive: TEdit
+    Left = 480
+    Top = 144
+    Width = 177
     Height = 21
     TabOrder = 9
   end
-  object Edthp: TEdit
-    Left = 488
-    Top = 144
-    Width = 153
-    Height = 21
-    TabOrder = 10
-  end
-  object Edtstatus: TEdit
-    Left = 488
-    Top = 176
-    Width = 153
-    Height = 21
-    TabOrder = 11
-  end
-  object bbaru: TButton
+  object b1: TButton
     Left = 24
-    Top = 216
+    Top = 184
     Width = 105
     Height = 41
     Caption = 'BARU'
-    TabOrder = 12
+    TabOrder = 10
   end
-  object bsimpan: TButton
-    Left = 152
-    Top = 216
+  object b2: TButton
+    Left = 144
+    Top = 184
     Width = 105
     Height = 41
     Caption = 'SIMPAN'
-    TabOrder = 13
+    TabOrder = 11
   end
-  object bedit: TButton
-    Left = 280
-    Top = 216
+  object b3: TButton
+    Left = 264
+    Top = 184
     Width = 105
     Height = 41
     Caption = 'EDIT'
-    TabOrder = 14
+    TabOrder = 12
   end
-  object bhapus: TButton
-    Left = 408
-    Top = 216
+  object b4: TButton
+    Left = 384
+    Top = 184
     Width = 105
     Height = 41
     Caption = 'HAPUS'
-    TabOrder = 15
+    TabOrder = 13
   end
-  object bbatal: TButton
-    Left = 536
-    Top = 216
+  object b5: TButton
+    Left = 504
+    Top = 184
     Width = 105
     Height = 41
     Caption = 'BATAL'
-    TabOrder = 16
+    TabOrder = 14
   end
   object dbgrd1: TDBGrid
     Left = 24
-    Top = 264
-    Width = 617
-    Height = 209
+    Top = 240
+    Width = 625
+    Height = 241
     DataSource = ds1
-    TabOrder = 17
+    TabOrder = 15
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
@@ -318,20 +278,20 @@ object FormSiswa: TFormSiswa
     Protocol = 'mysql'
     LibraryLocation = 'C:\Users\Fety Fatimah\OneDrive\Desktop\LaporanSiswa\libmysql.dll'
     Left = 672
-    Top = 24
+    Top = 16
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
-      'select*from siswa')
+      'select * from ortu')
     Params = <>
     Left = 672
-    Top = 96
+    Top = 72
   end
   object ds1: TDataSource
     DataSet = ZQuery1
     Left = 672
-    Top = 160
+    Top = 128
   end
 end
