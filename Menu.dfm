@@ -1,6 +1,6 @@
 object MenuUtama: TMenuUtama
-  Left = 192
-  Top = 152
+  Left = 185
+  Top = 145
   Width = 1044
   Height = 540
   Caption = 'MENU UTAMA'
@@ -26,6 +26,30 @@ object MenuUtama: TMenuUtama
       object ORANGTUA1: TMenuItem
         Caption = 'ORANG TUA'
         OnClick = ORANGTUA1Click
+      end
+      object STATUSHUBUNGAN1: TMenuItem
+        Caption = 'STATUS HUBUNGAN'
+        OnClick = STATUSHUBUNGAN1Click
+      end
+      object USER1: TMenuItem
+        Caption = 'USER'
+        OnClick = USER1Click
+      end
+      object KELAS1: TMenuItem
+        Caption = 'KELAS'
+      end
+      object POIN1: TMenuItem
+        Caption = 'POIN'
+      end
+      object SEMESTER1: TMenuItem
+        Caption = 'SEMESTER'
+      end
+      object WALIKELAS1: TMenuItem
+        Caption = 'WALI KELAS'
+      end
+      object CLOSE1: TMenuItem
+        Caption = 'CLOSE'
+        OnClick = CLOSE1Click
       end
     end
   end

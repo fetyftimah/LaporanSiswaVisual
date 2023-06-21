@@ -29,11 +29,11 @@ type
     Edtjk: TEdit;
     Edtagama: TEdit;
     Edtisactive: TEdit;
-    b1: TButton;
-    b2: TButton;
-    b3: TButton;
-    b4: TButton;
-    b5: TButton;
+    bbaru: TButton;
+    bsimpan: TButton;
+    bedit: TButton;
+    bhapus: TButton;
+    bbatal: TButton;
     ZConnection1: TZConnection;
     ZQuery1: TZQuery;
     ds1: TDataSource;

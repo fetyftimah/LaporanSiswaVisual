@@ -1,9 +1,9 @@
-object FormOrangTua: TFormOrangTua
-  Left = 232
-  Top = 253
-  Width = 839
-  Height = 541
-  Caption = 'FORM ORANG TUA'
+object FormSemester: TFormSemester
+  Left = 192
+  Top = 152
+  Width = 1044
+  Height = 540
+  Caption = 'FORM SEMESTER'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -26,12 +26,12 @@ object FormOrangTua: TFormOrangTua
     Font.Style = []
     ParentFont = False
   end
-  object lblnik: TLabel
+  object lblsiswaid: TLabel
     Left = 24
     Top = 48
-    Width = 36
+    Width = 73
     Height = 19
-    Caption = 'NIK :'
+    Caption = 'SISWA ID :'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -39,12 +39,12 @@ object FormOrangTua: TFormOrangTua
     Font.Style = []
     ParentFont = False
   end
-  object lblnama: TLabel
+  object lblpoinid: TLabel
     Left = 24
     Top = 80
-    Width = 54
+    Width = 65
     Height = 19
-    Caption = 'NAMA :'
+    Caption = 'POIN ID :'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -52,12 +52,12 @@ object FormOrangTua: TFormOrangTua
     Font.Style = []
     ParentFont = False
   end
-  object lblpendidikan: TLabel
+  object lblwaliid: TLabel
     Left = 24
     Top = 112
-    Width = 104
+    Width = 65
     Height = 19
-    Caption = 'PENDIDIKAN :'
+    Caption = 'WALI ID :'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -65,25 +65,12 @@ object FormOrangTua: TFormOrangTua
     Font.Style = []
     ParentFont = False
   end
-  object lblpekerjaan: TLabel
-    Left = 24
-    Top = 144
-    Width = 96
-    Height = 19
-    Caption = 'PEKERJAAN :'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Times New Roman'
-    Font.Style = []
-    ParentFont = False
-  end
-  object lbltelp: TLabel
+  object lblortuid: TLabel
     Left = 344
     Top = 16
-    Width = 42
+    Width = 68
     Height = 19
-    Caption = 'TELP :'
+    Caption = 'ORTU ID :'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -94,9 +81,9 @@ object FormOrangTua: TFormOrangTua
   object lblalamat: TLabel
     Left = 344
     Top = 48
-    Width = 70
+    Width = 79
     Height = 19
-    Caption = 'ALAMAT :'
+    Caption = 'TANGGAL :'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -104,12 +91,12 @@ object FormOrangTua: TFormOrangTua
     Font.Style = []
     ParentFont = False
   end
-  object lbljk: TLabel
+  object lblsemester: TLabel
     Left = 344
     Top = 80
-    Width = 124
+    Width = 85
     Height = 19
-    Caption = 'JENIS KELAMIN :'
+    Caption = 'SEMESTER :'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -117,25 +104,12 @@ object FormOrangTua: TFormOrangTua
     Font.Style = []
     ParentFont = False
   end
-  object lblagama: TLabel
+  object lblstatus: TLabel
     Left = 344
     Top = 112
-    Width = 64
+    Width = 62
     Height = 19
-    Caption = 'AGAMA :'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Times New Roman'
-    Font.Style = []
-    ParentFont = False
-  end
-  object lblisactive: TLabel
-    Left = 344
-    Top = 144
-    Width = 80
-    Height = 19
-    Caption = 'IS ACTIVE :'
+    Caption = 'STATUS :'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -150,121 +124,109 @@ object FormOrangTua: TFormOrangTua
     Height = 21
     TabOrder = 0
   end
-  object Edtnik: TEdit
+  object Edtsiswaid: TEdit
     Left = 136
     Top = 48
     Width = 177
     Height = 21
     TabOrder = 1
   end
-  object Edtnama: TEdit
+  object Edtpoinid: TEdit
     Left = 136
     Top = 80
     Width = 177
     Height = 21
     TabOrder = 2
   end
-  object Edtpendidikan: TEdit
+  object Edtwaliid: TEdit
     Left = 136
     Top = 112
     Width = 177
     Height = 21
     TabOrder = 3
   end
-  object Edtpekerjaan: TEdit
-    Left = 136
-    Top = 144
-    Width = 177
-    Height = 21
-    TabOrder = 4
-  end
-  object Edttelp: TEdit
+  object Edtortuid: TEdit
     Left = 480
     Top = 16
     Width = 177
     Height = 21
-    TabOrder = 5
+    TabOrder = 4
   end
-  object Edtalamat: TEdit
-    Left = 480
-    Top = 48
-    Width = 177
-    Height = 21
-    TabOrder = 6
-  end
-  object Edtjk: TEdit
+  object Edtsemester: TEdit
     Left = 480
     Top = 80
     Width = 177
     Height = 21
-    TabOrder = 7
+    TabOrder = 5
   end
-  object Edtagama: TEdit
+  object Edtstatus: TEdit
     Left = 480
     Top = 112
     Width = 177
     Height = 21
-    TabOrder = 8
-  end
-  object Edtisactive: TEdit
-    Left = 480
-    Top = 144
-    Width = 177
-    Height = 21
-    TabOrder = 9
+    TabOrder = 6
   end
   object bbaru: TButton
     Left = 24
-    Top = 184
+    Top = 152
     Width = 105
     Height = 41
     Caption = 'BARU'
-    TabOrder = 10
+    TabOrder = 7
   end
   object bsimpan: TButton
     Left = 144
-    Top = 184
+    Top = 152
     Width = 105
     Height = 41
     Caption = 'SIMPAN'
-    TabOrder = 11
+    TabOrder = 8
   end
   object bedit: TButton
     Left = 264
-    Top = 184
+    Top = 152
     Width = 105
     Height = 41
     Caption = 'EDIT'
-    TabOrder = 12
+    TabOrder = 9
   end
   object bhapus: TButton
     Left = 384
-    Top = 184
+    Top = 152
     Width = 105
     Height = 41
     Caption = 'HAPUS'
-    TabOrder = 13
+    TabOrder = 10
   end
   object bbatal: TButton
     Left = 504
-    Top = 184
+    Top = 152
     Width = 105
     Height = 41
     Caption = 'BATAL'
-    TabOrder = 14
+    TabOrder = 11
   end
   object dbgrd1: TDBGrid
     Left = 24
-    Top = 240
+    Top = 208
     Width = 625
     Height = 241
     DataSource = ds1
-    TabOrder = 15
+    TabOrder = 12
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+  end
+  object dtptgl: TDateTimePicker
+    Left = 480
+    Top = 48
+    Width = 186
+    Height = 21
+    Date = 45098.936920925920000000
+    Time = 45098.936920925920000000
+    TabOrder = 13
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -284,7 +246,7 @@ object FormOrangTua: TFormOrangTua
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
-      'select * from ortu')
+      'select * from semester')
     Params = <>
     Left = 672
     Top = 72
