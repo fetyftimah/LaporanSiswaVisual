@@ -37,15 +37,19 @@ object MenuUtama: TMenuUtama
       end
       object KELAS1: TMenuItem
         Caption = 'KELAS'
+        OnClick = KELAS1Click
       end
       object POIN1: TMenuItem
         Caption = 'POIN'
+        OnClick = POIN1Click
       end
       object SEMESTER1: TMenuItem
         Caption = 'SEMESTER'
+        OnClick = SEMESTER1Click
       end
       object WALIKELAS1: TMenuItem
         Caption = 'WALI KELAS'
+        OnClick = WALIKELAS1Click
       end
       object CLOSE1: TMenuItem
         Caption = 'CLOSE'

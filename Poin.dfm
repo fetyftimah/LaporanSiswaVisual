@@ -1,9 +1,9 @@
-object FormKelas: TFormKelas
+object FormPoin: TFormPoin
   Left = 192
   Top = 152
-  Width = 803
+  Width = 769
   Height = 540
-  Caption = 'FORM KELAS'
+  Caption = 'FORM POIN'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -26,12 +26,25 @@ object FormKelas: TFormKelas
     Font.Style = []
     ParentFont = False
   end
-  object lblnama: TLabel
+  object lblnamapoin: TLabel
     Left = 24
     Top = 48
-    Width = 54
+    Width = 96
     Height = 19
-    Caption = 'NAMA :'
+    Caption = 'NAMA POIN :'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Times New Roman'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lblbobot: TLabel
+    Left = 24
+    Top = 80
+    Width = 60
+    Height = 19
+    Caption = 'BOBOT :'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -52,12 +65,12 @@ object FormKelas: TFormKelas
     Font.Style = []
     ParentFont = False
   end
-  object lbljurusan: TLabel
+  object lblstatus: TLabel
     Left = 344
     Top = 48
-    Width = 77
+    Width = 62
     Height = 19
-    Caption = 'JURUSAN :'
+    Caption = 'STATUS :'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -72,19 +85,26 @@ object FormKelas: TFormKelas
     Height = 21
     TabOrder = 0
   end
-  object Edtnama: TEdit
+  object Edtnamapoin: TEdit
     Left = 136
     Top = 48
     Width = 177
     Height = 21
     TabOrder = 1
   end
+  object Edtbobot: TEdit
+    Left = 136
+    Top = 80
+    Width = 177
+    Height = 21
+    TabOrder = 2
+  end
   object Edtjenis: TEdit
     Left = 448
     Top = 16
     Width = 177
     Height = 21
-    TabOrder = 2
+    TabOrder = 3
   end
   object bbaru: TButton
     Left = 24
@@ -92,7 +112,7 @@ object FormKelas: TFormKelas
     Width = 105
     Height = 41
     Caption = 'BARU'
-    TabOrder = 3
+    TabOrder = 4
   end
   object bsimpan: TButton
     Left = 144
@@ -100,7 +120,7 @@ object FormKelas: TFormKelas
     Width = 105
     Height = 41
     Caption = 'SIMPAN'
-    TabOrder = 4
+    TabOrder = 5
   end
   object bedit: TButton
     Left = 264
@@ -108,7 +128,7 @@ object FormKelas: TFormKelas
     Width = 105
     Height = 41
     Caption = 'EDIT'
-    TabOrder = 5
+    TabOrder = 6
   end
   object bhapus: TButton
     Left = 384
@@ -116,7 +136,7 @@ object FormKelas: TFormKelas
     Width = 105
     Height = 41
     Caption = 'HAPUS'
-    TabOrder = 6
+    TabOrder = 7
   end
   object bbatal: TButton
     Left = 504
@@ -124,7 +144,7 @@ object FormKelas: TFormKelas
     Width = 105
     Height = 41
     Caption = 'BATAL'
-    TabOrder = 7
+    TabOrder = 8
   end
   object dbgrd1: TDBGrid
     Left = 24
@@ -132,27 +152,18 @@ object FormKelas: TFormKelas
     Width = 625
     Height = 241
     DataSource = ds1
-    TabOrder = 8
+    TabOrder = 9
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
   end
-  object rbipa: TRadioButton
+  object Edtstatus: TEdit
     Left = 448
     Top = 48
-    Width = 113
-    Height = 17
-    Caption = 'IPA'
-    TabOrder = 9
-  end
-  object rbips: TRadioButton
-    Left = 448
-    Top = 72
-    Width = 113
-    Height = 17
-    Caption = 'IPS'
+    Width = 177
+    Height = 21
     TabOrder = 10
   end
   object ZConnection1: TZConnection
@@ -173,8 +184,7 @@ object FormKelas: TFormKelas
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
-      'select * from kelas'
-      '')
+      'select * from poin')
     Params = <>
     Left = 672
     Top = 72

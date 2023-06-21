@@ -1,20 +1,22 @@
-unit Kelas;
+unit Poin;
 
 interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, DB, ZAbstractRODataset, ZAbstractDataset, ZDataset,
-  ZAbstractConnection, ZConnection, Grids, DBGrids;
+  Dialogs, DB, ZAbstractRODataset, ZAbstractDataset, ZDataset,
+  ZAbstractConnection, ZConnection, Grids, DBGrids, StdCtrls;
 
 type
-  TFormKelas = class(TForm)
+  TFormPoin = class(TForm)
     lblid: TLabel;
-    lblnama: TLabel;
+    lblnamapoin: TLabel;
+    lblbobot: TLabel;
     lbljenis: TLabel;
-    lbljurusan: TLabel;
+    lblstatus: TLabel;
     Edtid: TEdit;
-    Edtnama: TEdit;
+    Edtnamapoin: TEdit;
+    Edtbobot: TEdit;
     Edtjenis: TEdit;
     bbaru: TButton;
     bsimpan: TButton;
@@ -25,8 +27,7 @@ type
     ZConnection1: TZConnection;
     ZQuery1: TZQuery;
     ds1: TDataSource;
-    rbipa: TRadioButton;
-    rbips: TRadioButton;
+    Edtstatus: TEdit;
   private
     { Private declarations }
   public
@@ -34,7 +35,7 @@ type
   end;
 
 var
-  FormKelas: TFormKelas;
+  FormPoin: TFormPoin;
 
 implementation
 

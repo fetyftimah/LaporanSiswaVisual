@@ -24,6 +24,10 @@ type
     procedure STATUSHUBUNGAN1Click(Sender: TObject);
     procedure USER1Click(Sender: TObject);
     procedure CLOSE1Click(Sender: TObject);
+    procedure WALIKELAS1Click(Sender: TObject);
+    procedure POIN1Click(Sender: TObject);
+    procedure KELAS1Click(Sender: TObject);
+    procedure SEMESTER1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -35,7 +39,7 @@ var
 
 implementation
 
-uses Siswa, OrangTua, Hubungan, User;
+uses Siswa, OrangTua, Hubungan, User, WaliKelas, Poin, Kelas, Semester;
 
 {$R *.dfm}
 
@@ -62,6 +66,26 @@ end;
 procedure TMenuUtama.CLOSE1Click(Sender: TObject);
 begin
 Application.Terminate;
+end;
+
+procedure TMenuUtama.WALIKELAS1Click(Sender: TObject);
+begin
+FormWaliKelas.ShowModal;
+end;
+
+procedure TMenuUtama.POIN1Click(Sender: TObject);
+begin
+FormPoin.ShowModal;
+end;
+
+procedure TMenuUtama.KELAS1Click(Sender: TObject);
+begin
+FormKelas.ShowModal;
+end;
+
+procedure TMenuUtama.SEMESTER1Click(Sender: TObject);
+begin
+FormSemester.ShowModal;
 end;
 
 end.
