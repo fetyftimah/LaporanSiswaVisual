@@ -5,7 +5,8 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, DB, ZAbstractRODataset, ZAbstractDataset, ZDataset,
-  ZAbstractConnection, ZConnection, Grids, DBGrids, StdCtrls, ComCtrls;
+  ZAbstractConnection, ZConnection, Grids, DBGrids, StdCtrls, ComCtrls,
+  frxClass, frxDBSet;
 
 type
   TFormSiswa = class(TForm)
@@ -40,6 +41,9 @@ type
     ds1: TDataSource;
     cbbjk: TComboBox;
     dtp1: TDateTimePicker;
+    frxReport1: TfrxReport;
+    frxDBDataset1: TfrxDBDataset;
+    b1: TButton;
     procedure keawal;
     procedure edtbersih;
     procedure edtenable;
@@ -50,6 +54,7 @@ type
     procedure dbgrd1CellClick(Column: TColumn);
     procedure bhapusClick(Sender: TObject);
     procedure beditClick(Sender: TObject);
+    procedure b1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -236,6 +241,11 @@ begin
   keawal;
   end;
 
+end;
+
+procedure TFormSiswa.b1Click(Sender: TObject);
+begin
+frxReport1.ShowReport();
 end;
 
 end.
